@@ -9,7 +9,7 @@ Başka kişilerin/kurumların sistemlerine izinsiz erişim yasalara aykırıdır
 
 Dipnot: Sitenin URL'sini değiştirmeniz gerekli kodlardan.
 
- Özellikler
+<b> Özellikler
 
  Wordlist’ten otomatik parola denemesi
 
@@ -17,14 +17,17 @@ Dipnot: Sitenin URL'sini değiştirmeniz gerekli kodlardan.
 
  Cloudflare engellerini aşmak için cookie desteği
 
- GGecikme (--delay) parametresi
+ Gecikme (--delay) parametresi
 
  Başarılı giriş bulunduğunda otomatik olarak kaydeder. 
+ </b>
 
 Kurulum
 
 git clone https://github.com/leoniofficials/Wordlist-Based-Login-Tester
+
 cd wordlist-based-login-tester
+
 pip install -r requirements.txt
 
 Kullanım
