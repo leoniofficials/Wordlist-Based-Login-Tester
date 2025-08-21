@@ -39,6 +39,7 @@ python basedwordlist.py --user leoniofficials -P wordlist.txt
 Gelişmiş kullanım:
 
 python basedwordlist.py --user leoniofficials -P wordlist.txt --delay 0.5 --csrf csrf_token --error "Yanlış şifre!" --cookies cookies.txt
+
 </b>
 Parametreler:
 
